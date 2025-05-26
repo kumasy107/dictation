@@ -1,0 +1,30 @@
+.sentence-link {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.sentence-link:hover {
+    color: #0055aa;
+    text-decoration: underline;
+}
+.pagination {
+    margin-top: 20px;
+}
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #444;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.pagination a.active {
+    background-color: #0077cc;
+    color: white;
+    pointer-events: none;
+}
+.pagination a:hover {
+    background-color: #005fa3;
+    color: white;
+}

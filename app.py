@@ -72,10 +72,26 @@ def add():
 
     return render_template("add.html")
 
-@app.route('/sentence_list', methods=["GET", "POST"])
+@app.route('/sentence_list')
 def sentence_list():
-    sentences = load_data()
-    return render_template("sentence_list.html", sentences=sentences)
+    data = load_data()
+    page = int(request.args.get("page", 1))
+    per_page = 30
+
+    sorted_items = sorted(data.items(), key=lambda x: int(x[0]))  # ID順に並べ替え
+    total = len(sorted_items)
+    total_pages = (total + per_page - 1) // per_page  # ceil割り
+
+    start = (page - 1) * per_page
+    end = start + per_page
+    page_items = dict(sorted_items[start:end])
+
+    return render_template(
+        "sentence_list.html",
+        page_sentences=page_items,
+        total_pages=total_pages,
+        current_page=page
+    )
 
 @app.route('/edit/<id>', methods=['GET', 'POST'])
 def edit(id):
