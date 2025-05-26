@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dictation.css') }}">
+    <script src="{{ url_for('static', filename='js/dictation.js') }}"></script>
+</head>
+<body>
+    <h2>Dictation ID: {{ id }}</h2>
+    <audio id="audio" controls>
+        <source src="{{ audio_file }}" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio><br>
+    <input type="text" id="userInput" size="60" onkeydown="if(event.key==='Enter') checkAnswer();">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+    <div id="vocab-info"></div>
+
+    <br><hr>
+    {% if prev_id %}
+        <a href="{{ url_for('dictation', id=prev_id) }}">⬅️ 前へ</a>
+    {% endif %}
+    {% if next_id %}
+        <a href="{{ url_for('dictation', id=next_id) }}" style="margin-left:20px;">次へ ➡️</a>
+    {% endif %}
+
+    <!-- 戻るボタン -->
+    <p><a href="{{ url_for('index') }}">🏠 Back to Index</a></p>
+
+</body>
+</html>

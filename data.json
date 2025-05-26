@@ -1,0 +1,369 @@
+{
+  "1": {
+    "text": "How can we tell when somebody's been running a lot?",
+    "vocabularies": [
+      "How can we tell when somebody's been running a lot?"
+    ],
+    "created_at": "2025-05-25"
+  },
+  "2": {
+    "text": "When we arrive at someone's house, how can we tell if they've recently been cooking?",
+    "vocabularies": []
+  },
+  "3": {
+    "text": "When considering the price of a meal in a restaurant, do you take into account such things as the service charge and the waiter's tip?",
+    "vocabularies": [
+      {
+        "word": "take into account",
+        "pronunciation": "",
+        "meaning": "考慮に入れる",
+        "comment": ""
+      }
+    ]
+  },
+  "4": {
+    "text": "What do we say when we are trying to think of a word or a name that we know well, but we cannot remember it immediately?",
+    "vocabularies": [
+      {
+        "word": "it's on the tip of our tongue",
+        "pronunciation": "",
+        "meaning": "名前が出かかってる",
+        "comment": ""
+      }
+    ]
+  },
+  "5": {
+    "text": "When you're buying something like a new phone or watch, do you have trouble making up your mind which one to buy?",
+    "vocabularies": [
+      {
+        "word": "make up one's mind",
+        "pronunciation": "",
+        "meaning": "決心する",
+        "comment": ""
+      }
+    ]
+  },
+  "6": {
+    "text": "If you noticed somebody struggling to get a pushchair onto a bus, would you assist them?",
+    "vocabularies": [
+      {
+        "word": "pushchair",
+        "pronunciation": "",
+        "meaning": "ベビーカー",
+        "comment": "<米> Baby carriage"
+      }
+    ]
+  },
+  "7": {
+    "text": "Would you say the shop assistants in this country were reasonably polite and helpful?",
+    "vocabularies": []
+  },
+  "8": {
+    "text": "A paw is the foot of an animal which has claws, like that of a cat, a dog, a lion etc.",
+    "vocabularies": [
+      {
+        "word": "paw",
+        "pronunciation": "",
+        "meaning": "（動物の爪のある）足",
+        "comment": ""
+      },
+      {
+        "word": "claw",
+        "pronunciation": "",
+        "meaning": "爪",
+        "comment": ""
+      }
+    ]
+  },
+  "9": {
+    "text": "Do you think it's right for governments to spend public money on preserving historic buildings, or do you think public money should be spent in other ways?",
+    "vocabularies": [
+      {
+        "word": "preserve",
+        "pronunciation": "",
+        "meaning": "保存する",
+        "comment": ""
+      },
+      {
+        "word": "historic",
+        "pronunciation": "",
+        "meaning": "歴史的な、歴史上重要な",
+        "comment": "historical: 歴史全般を指す、historic: 歴史的な出来事などを指す"
+      }
+    ]
+  },
+  "10": {
+    "text": "Do people behave differently from how they normally do when they think they're not being observed by others?",
+    "vocabularies": []
+  },
+  "11": {
+    "text": "Look at David; he's covered in mud. I think he's been working in his garden.",
+    "vocabularies": [
+      {
+        "word": "have been Ving",
+        "pronunciation": "",
+        "meaning": "（証拠があって）～だろう",
+        "comment": "特定の時間までの期間を指す使い方もある"
+      },
+      {
+        "word": "be covered in",
+        "pronunciation": "",
+        "meaning": "~に覆われている",
+        "comment": ""
+      }
+    ]
+  },
+  "12": {
+    "text": "If someone called you on your mobile phone and you were otherwise engaged with something important, would you take the call?",
+    "vocabularies": [
+      "If someone called you on your mobile phone and you were otherwise engaged with something important, would you take the call?"
+    ],
+    "created_at": "2025-05-25"
+  },
+  "13": {
+    "text": "If a car had one broken window but otherwise was in good condition, would you buy it?",
+    "vocabularies": [
+      {
+        "word": "otherwise",
+        "pronunciation": "",
+        "meaning": "他の",
+        "comment": "形容詞的な使い方で使われる。The report had some typos, but it was otherwise excellent."
+      }
+    ],
+    "created_at": "2025-05-23"
+  },
+  "14": {
+    "text": "If you had to perform in a play what kind of part would you like to perform?",
+    "vocabularies": [],
+    "created_at": "2025-05-23"
+  },
+  "15": {
+    "text": "Name an actor who you think always gives good performances in films?",
+    "vocabularies": [],
+    "created_at": "2025-05-23"
+  },
+  "16": {
+    "text": "What kind of people do you envy?",
+    "vocabularies": [
+      {
+        "word": "envy",
+        "pronunciation": "",
+        "meaning": "うらやましく思う",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-23"
+  },
+  "17": {
+    "text": "Are you envious of the fame that celebrities have?",
+    "vocabularies": [
+      {
+        "word": "be envious of A",
+        "pronunciation": "",
+        "meaning": "Aをうらやましく思う",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-23"
+  },
+  "18": {
+    "text": "Can you think of any sporting record that has been broken recently?",
+    "vocabularies": [
+      {
+        "word": "think of",
+        "pronunciation": "",
+        "meaning": "おもいつく",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "19": {
+    "text": "Why do farmers sometimes plant seeds carefully in the ground in rows rather than just scatter them on the land?",
+    "vocabularies": [
+      {
+        "word": "in rows",
+        "pronunciation": "",
+        "meaning": "列で",
+        "comment": "in a row: 一列に，連続して、three times in a row: 3連続で"
+      },
+      {
+        "word": "scatter",
+        "pronunciation": "",
+        "meaning": "散らす",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "20": {
+    "text": "Why does a disorderly crowd of people scatter when the police arrive?",
+    "vocabularies": [
+      {
+        "word": "disprderly",
+        "pronunciation": "",
+        "meaning": "無秩序な、乱雑な",
+        "comment": "lyで終わるが形容詞"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "21": {
+    "text": "You're tapping your fingers on the table.",
+    "vocabularies": [
+      {
+        "word": "tap",
+        "pronunciation": "",
+        "meaning": "トントン叩く、軽く叩く",
+        "comment": "tapの後は叩く物が入る"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "22": {
+    "text": "In which direction does one normally turn a water tap on?",
+    "vocabularies": [
+      {
+        "word": "water tap",
+        "pronunciation": "",
+        "meaning": "水道",
+        "comment": "問題の答えはanticlockwise"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "23": {
+    "text": "Is pollution a more serious problem now than it was a hundred years ago?",
+    "vocabularies": [
+      {
+        "word": "pollution",
+        "pronunciation": "",
+        "meaning": "汚染",
+        "comment": "pollen: 花粉"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "24": {
+    "text": "Are most of the rivers in this country heavily polluted?",
+    "vocabularies": [
+      {
+        "word": "polluted",
+        "pronunciation": "",
+        "meaning": "汚染された",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "25": {
+    "text": "Every time you explain anything to him, he always seems to get the wrong end of the stick.",
+    "vocabularies": [
+      {
+        "word": "get (hold of) the wrong end of the stick",
+        "pronunciation": "",
+        "meaning": "間違って理解する",
+        "comment": ""
+      },
+      {
+        "word": "Every time I ~",
+        "pronunciation": "",
+        "meaning": "～するたびに",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "26": {
+    "text": "We trusted him completely, but we were to find out later that he had been lying all the time.",
+    "vocabularies": [
+      {
+        "word": "was to V",
+        "pronunciation": "",
+        "meaning": "後になって〜することになる",
+        "comment": "後のthat節の中が過去完了進行形であり、時間の流れを示している"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "27": {
+    "text": "By a slight headache, we mean a headache which is not very strong",
+    "vocabularies": [
+      {
+        "word": "slight",
+        "pronunciation": "",
+        "meaning": "わずかな、小さな",
+        "comment": "Slight means small, and usually unimportant. slight delay: 非常に短い遅延"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "28": {
+    "text": "You're turning your book upside down.",
+    "vocabularies": [
+      {
+        "word": "upside down",
+        "pronunciation": "",
+        "meaning": "上下逆さまに",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "29": {
+    "text": "You're turning your book the right way up.",
+    "vocabularies": [
+      {
+        "word": "right way up",
+        "pronunciation": "",
+        "meaning": "正しい方を上にして",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "30": {
+    "text": "Is it true that birds are the only animals in the world that have feathers?",
+    "vocabularies": [
+      {
+        "word": "feathers",
+        "pronunciation": "",
+        "meaning": "羽",
+        "comment": ""
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "31": {
+    "text": "What'd happen if I kept rubbing my sleeve on the edge of the table, like this?",
+    "vocabularies": [
+      "What'd happen if I kept rubbing my sleeve on the edge of the table, like this?"
+    ],
+    "created_at": "2025-05-25"
+  },
+  "32": {
+    "text": "We mend or throw away cloths that are worn out.",
+    "vocabularies": [
+      {
+        "word": "mend",
+        "pronunciation": "",
+        "meaning": "繕う、直す",
+        "comment": ""
+      },
+      {
+        "word": "worn out",
+        "pronunciation": "",
+        "meaning": "使い古された、ボロボロになった",
+        "comment": "一般的に靴や服に使うが、人に使うこともある"
+      }
+    ],
+    "created_at": "2025-05-25"
+  },
+  "33": {
+    "text": "If you told me you were feeling worn out, you'd mean you were exhausted.",
+    "vocabularies": [
+      "If you told me you were feeling worn out, you'd mean you were exhausted."
+    ],
+    "created_at": "2025-05-25"
+  }
+}

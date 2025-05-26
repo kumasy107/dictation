@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictation App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Dictation Practice</h1>
+    <a href="{{ url_for('add') }}">➕ Add New Sentence</a>
+    <ul>
+        <li><a href="{{ url_for('dictation', id=minimum_id) }}">Practice in order</a></li>
+        <li><a href="{{ url_for('dictation_shuffle', index=0) }}">Practice in shuffle mode</a></li>
+    </ul>
+    <a href="{{ url_for('sentence_list') }}">📜 Sentence List</a>
+</body>
+</html>

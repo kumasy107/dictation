@@ -1,0 +1,15 @@
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+#result.correct {
+    color: green;
+}
+#result.incorrect {
+    color: red;
+}
+.vocab-block {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-left: 4px solid #ccc;
+}

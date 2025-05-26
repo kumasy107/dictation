@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentence List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Sentence List</h1>
+    <ul>
+        {% for key, sentence in sentences.items() %}
+            <li>
+                {{ key }}
+                <a href="{{ url_for('edit', id=key) }}">
+                    {{ sentence.text }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Sentence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+    <script src="{{ url_for('static', filename='js/add.js') }}"></script>
+</head>
+<body>
+    <h1>Add a New Sentence</h1>
+    <form method="POST">
+        <label>Text:</label><br>
+        <input type="text" name="text" required><br><br>
+
+        <input type="hidden" id="vocab_count" name="vocab_count" value="0">
+        <div id="vocab-container"></div>
+        <button type="button" onclick="addVocabForm()">Add Vocabulary</button><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
