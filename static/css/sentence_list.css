@@ -1,3 +1,8 @@
+.sentence-id {
+    color: #888;
+    font-size: 0.9em;
+    margin-right: 8px;
+}
 .sentence-link {
     text-decoration: none;
     color: #0077cc;

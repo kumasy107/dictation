@@ -9,16 +9,18 @@
 <body>
     {% include 'navbar.html' %}
     <h1>Sentence List</h1>
-    <
-        ol start="{{ (current_page - 1) * 30 + 1 }}">
+    <ol start="{{ (current_page - 1) * 30 + 1 }}">
         {% for key, sentence in page_sentences.items() %}
             <li>
+                <span class="sentence-id">[ID: {{ key }}]</span>
                 <a class="sentence-link" href="{{ url_for('edit', id=key) }}">
                     {{ sentence.text }}
                 </a>
             </li>
         {% endfor %}
     </ol>
+
+
 
     <div class="pagination">
         {% for p in range(1, total_pages + 1) %}
