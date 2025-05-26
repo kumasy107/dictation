@@ -3,26 +3,30 @@
 <head>
     <title>Edit Sentence</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+    <script src="{{ url_for('static', filename='js/add.js') }}"></script>
 </head>
 <body>
+    {% include 'navbar.html' %}
     <h1>Edit Sentence</h1>
     <form method="POST">
-        <label for="text">Sentence:</label><br>
-        <input type="text" id="text" name="text" value="{{ sentence.text }}"><br><br>
-        {% if sentence.vocabularies %}
-            {% for vocab in sentence.vocabularies %}
-                Word:<br>
-                <input type="text" id="word" name="word" value="{{ vocab.word }}"><br>
-                Pronounciation:<br>
-                <input type="text" id="pronounciation" name="pronounciation" value="{{ vocab.pronounciation }}"><br>
-                Meaning:<br>
-                <input type="text" id="meaning" name="meaning" value="{{ vocab.meaning }}"><br>
-                Comment:<br>
-                <input type="text" id="comment" name="comment" value="{{ vocab.comment }}"><br><br>
-            {% endfor %}
-        {% endif %}
+        <label>Text:</label><br>
+        <input type="text" name="text" value="{{ sentence.text }}" required><br><br>
+
+        <input type="hidden" id="vocab_count" name="vocab_count" value="{{ sentence.vocabularies|length if sentence.vocabularies else 0 }}">
+        <div id="vocab-container"></div>
+        <button type="button" onclick="addVocabForm()">Add Vocabulary</button><br><br>
+
         <input type="submit" value="Update">
     </form>
     <p><a href="{{ url_for('sentence_list') }}">Back to List</a></p>
+
+    <script>
+        // 語彙データをサーバーサイドからJavaScriptへ渡す
+        const existingVocabularies = {{ sentence.vocabularies|tojson|safe }};
+        for (const vocab of existingVocabularies) {
+            addVocabForm(vocab);
+        }
+    </script>
 </body>
 </html>

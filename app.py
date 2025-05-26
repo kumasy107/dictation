@@ -5,9 +5,6 @@ import random
 from datetime import datetime
 from gtts import gTTS
 
-#TODO: 編集時、語彙を設定していない文章に語彙を追加できるようにする
-#TODO: 編集後、音声ファイルも更新する
-
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 DATA_PATH = 'data.json'
@@ -83,16 +80,44 @@ def sentence_list():
 @app.route('/edit/<id>', methods=['GET', 'POST'])
 def edit(id):
     data = load_data()
-    data_id = data[f"{id}"]
+    data_id = data.get(f"{id}")
     if not data_id:
         return "Sentence not found", 404
 
-    #TODO ココ直す
+    text_before = data_id.get("text", "")
+    time_before = data_id.get("created_at", "")
+
     if request.method == 'POST':
-        data[f"{id}"] = {"text": request.form['text'],
-                        "vocabularies": [request.form['text']],
-                        "created_at": datetime.today().strftime("%Y-%m-%d")}
+        new_text = request.form.get('text', '').strip()
+
+        # 語彙の再構築（← POSTの中に移動）
+        vocabularies = []
+        vocab_count = int(request.form.get("vocab_count", 0))
+        for i in range(vocab_count):
+            word = request.form.get(f"vocab_{i}_word", "").strip()
+            pronunciation = request.form.get(f"vocab_{i}_pron", "").strip()
+            meaning = request.form.get(f"vocab_{i}_meaning", "").strip()
+            comment = request.form.get(f"vocab_{i}_comment", "").strip()
+            if word:
+                vocabularies.append({
+                    "word": word,
+                    "pronunciation": pronunciation,
+                    "meaning": meaning,
+                    "comment": comment
+                })
+
+        # データ更新
+        data[f"{id}"] = {
+            "text": new_text,
+            "vocabularies": vocabularies,
+            "created_at": time_before
+        }
         save_data(data)
+
+        # 文が変更されたときは音声も更新
+        if new_text != text_before:
+            generate_audio(new_text, id)
+
         return redirect(url_for('sentence_list'))
 
     return render_template('edit.html', sentence=data_id)

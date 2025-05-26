@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    {% include 'navbar.html' %}
     <h1>Dictation Practice</h1>
     <a href="{{ url_for('add') }}">➕ Add New Sentence</a>
     <ul>

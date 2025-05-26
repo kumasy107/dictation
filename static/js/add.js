@@ -1,6 +1,6 @@
 let vocabIndex = 0;
 
-function addVocabForm() {
+function addVocabForm(vocab = null) {
     const container = document.getElementById('vocab-container');
     const div = document.createElement('div');
     div.id = `vocab-${vocabIndex}`;
@@ -9,19 +9,19 @@ function addVocabForm() {
             <legend>Vocabulary ${vocabIndex + 1}</legend>
             <div class="form-row">
                 <label for="vocab_${vocabIndex}_word">Word:</label>
-                <input type="text" name="vocab_${vocabIndex}_word" id="vocab_${vocabIndex}_word" class="form-input">
+                <input type="text" name="vocab_${vocabIndex}_word" id="vocab_${vocabIndex}_word" class="form-input" value="${vocab?.word || ''}">
             </div>
             <div class="form-row">
                 <label for="vocab_${vocabIndex}_pron">Pronunciation:</label>
-                <input type="text" name="vocab_${vocabIndex}_pron" id="vocab_${vocabIndex}_pron" class="form-input">
+                <input type="text" name="vocab_${vocabIndex}_pron" id="vocab_${vocabIndex}_pron" class="form-input" value="${vocab?.pronounciation || ''}">
             </div>
             <div class="form-row">
                 <label for="vocab_${vocabIndex}_meaning">Meaning:</label>
-                <input type="text" name="vocab_${vocabIndex}_meaning" id="vocab_${vocabIndex}_meaning" class="form-input">
+                <input type="text" name="vocab_${vocabIndex}_meaning" id="vocab_${vocabIndex}_meaning" class="form-input" value="${vocab?.meaning || ''}">
             </div>
             <div class="form-row">
                 <label for="vocab_${vocabIndex}_comment">Comment:</label>
-                <input type="text" name="vocab_${vocabIndex}_comment" id="vocab_${vocabIndex}_comment" class="form-input">
+                <input type="text" name="vocab_${vocabIndex}_comment" id="vocab_${vocabIndex}_comment" class="form-input" value="${vocab?.comment || ''}">
             </div>
             <button type="button" class="cancel-btn" onclick="removeVocabForm(${vocabIndex})">❌ Remove</button>
         </fieldset>
