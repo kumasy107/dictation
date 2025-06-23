@@ -20,10 +20,10 @@
 
     <br><hr>
     {% if prev_id %}
-        <a href="{{ url_for('dictation', id=prev_id) }}">⬅️ 前へ</a>
+    <a href="{{ prev_id }}">⬅️ 前へ</a>
     {% endif %}
     {% if next_id %}
-        <a href="{{ url_for('dictation', id=next_id) }}" style="margin-left:20px;">次へ ➡️</a>
+        <a href="{{ next_id }}" style="margin-left:20px;">次へ ➡️</a>
     {% endif %}
 
     <!-- 戻るボタン -->

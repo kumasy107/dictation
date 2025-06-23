@@ -171,6 +171,9 @@ def dictation_shuffle(index):
     ids = sorted(map(int, data.keys()))
     if not ids:
         return "No data available", 404
+    
+    if request.args.get("reset") == "1" or "shuffled_ids" not in session:
+        session["shuffled_ids"] = random.sample(ids, len(ids))
 
     # セッションにシャッフル順がなければ新たに作成
     if "shuffled_ids" not in session:
